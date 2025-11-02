@@ -1,7 +1,6 @@
 # sd-train-architecture · LoRA MVP
 
 ## Overview
-(这个项目花了一天时间写完，并成功完成了训练，训练效果也能看得过去)
 This project is a lightweight training stack for adapting stable-diffusion-v1-5 with LoRA. It ships with tools for curating datasets, fine‑tuning, scoring results, and serving jobs over an API, so you can go from raw images to deployable adapters in one repo.
 
 ## Features
