@@ -4,10 +4,10 @@ from diffusers import StableDiffusionPipeline
 from safetensors.torch import load_file
 
 # 路径配置
-base_model_dir = "/home/tione/notebook/lq/sd/zuoye/model"
-lora_adapter_dir = "/home/tione/notebook/lq/sd/zuoye/outputs/lora6/lora_adapter"
+base_model_dir = "/path/to/model"
+lora_adapter_dir = "/path/to/outputs/lora6/lora_adapter"
 lora_weight_file = Path(lora_adapter_dir) / "pytorch_lora_weights.safetensors"
-output_dir = Path("/home/tione/notebook/lq/sd/zuoye/renders_lora11888")
+output_dir = Path("/path/to/outputdir")
 output_dir.mkdir(parents=True, exist_ok=True)
 
 # 设备与精度
