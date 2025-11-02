@@ -1,11 +1,11 @@
 data:
-  raw_data_dir: /home/tione/notebook/lq/sd/zuoye/data/default/train
-  processed_dir: /home/tione/notebook/lq/sd/zuoye/data/processed
+  raw_data_dir: /path/to/data/default/train
+  processed_dir: /path/to/data/processed
   caption_template: "A portrait of a {label} in ancient style"
 
 training:
-  pretrained_model: /home/tione/notebook/lq/sd/zuoye/model
-  output_dir: /home/tione/notebook/lq/sd/zuoye/outputs/lora6
+  pretrained_model: /path/to/model
+  output_dir: /path/to/outputs/lora6
   max_train_steps: 1000                # 总步数，按需提高
   checkpointing_steps: 1500             # 多久存一次 checkpoint
   lora_rank: 32                # 提高 rank，让残差表达能力更强
@@ -15,7 +15,7 @@ training:
 
 evaluation:
   prompts:
-    - "An ancient style portrait"
+    - "a detailed portrait of an ancient-style warrior, elegant lighting, 4k"
     - "A traditional Chinese noble"
 
 api:
